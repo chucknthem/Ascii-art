@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <style type="text/css">
+      #ascii {
+        font-family: Courier;
+        line-height: 8px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Create ascii art from an image</h3>
+    <p>Note: Your browser must support the HTML canvas and file input APIs for this to work.</p>
+    <p>Pick an image file from your computer:</p>
+    <input id="file" type="file" accept="image/*"/><br />
+
+    <canvas id="canvas"></canvas>
+    <div id="ascii" style="font-family: Courier"></div>
+
+    <script type="text/javascript" src="lib/coffee-script.js"></script>
+    <script type="text/coffeescript" src="main.coffee"></script>
+  </body>
+</html>
